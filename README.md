@@ -16,7 +16,7 @@ The implementation is comming soon.
 
 ## Shadow detection results at test datasets
 The results of shadow detection(w & w/o crf) on three datasets (SBU, UCF, ISTD) can be found 
-at [Google Drive]() or [BaiduNetdisk]().
+at [Google Drive](https://drive.google.com/file/d/1BK4x9IUNQKBaP7ye5S2-e9_zEN7FbZUg/view?usp=sharing) or [BaiduNetdisk](https://pan.baidu.com/s/1Rdp8rQbj5f7Id4JJj99nxw)(password:131b for BaiduNetdisk).
 
 ## Trained Model
 You can download the trained model which is reported in our paper at 

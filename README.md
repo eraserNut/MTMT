@@ -20,7 +20,7 @@ at [Google Drive](https://drive.google.com/file/d/1BK4x9IUNQKBaP7ye5S2-e9_zEN7Fb
 
 ## Trained Model
 You can download the trained model which is reported in our paper at 
-[Google Drive]() or [BaiduNetdisk]().
+(Google Drive) or (BaiduNetdisk).
 
 ## Requirement
 * Python 3.6
@@ -46,4 +46,4 @@ You can directly [download](https://drive.google.com/open?id=1dnH-IHwmu9xFPlyndq
 2. Run by ```python infer.py```
 
 ## Useful links
-UCF dataset[Google Drive](https://drive.google.com/open?id=12DOmMVmE-oNuJVXmkBJrkfBvuDd0O70N)[BaiduNetdisk](https://pan.baidu.com/s/1zt9ya1lzNcoGoc2CET3mdg)(password:o4ub for BaiduNetdisk)
+UCF dataset: [Google Drive](https://drive.google.com/open?id=12DOmMVmE-oNuJVXmkBJrkfBvuDd0O70N) or [BaiduNetdisk](https://pan.baidu.com/s/1zt9ya1lzNcoGoc2CET3mdg)(password:o4ub for BaiduNetdisk)

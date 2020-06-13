@@ -1,6 +1,6 @@
 # A Multi-task Mean Teacher for Semi-supervised Shadow Detection
 
-by Zhihao Chen, Lei Zhu, Liang Wan, Song Wang, Wei Feng, and Pheng-Ann Heng [[paper link]()]
+by Zhihao Chen, Lei Zhu, Liang Wan, Song Wang, Wei Feng, and Pheng-Ann Heng [[paper link](http://openaccess.thecvf.com/content_CVPR_2020/papers/Chen_A_Multi-Task_Mean_Teacher_for_Semi-Supervised_Shadow_Detection_CVPR_2020_paper.pdf)]
 
 The implementation is comming soon.
 

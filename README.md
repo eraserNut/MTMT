@@ -2,7 +2,7 @@
 
 by Zhihao Chen, Lei Zhu, Liang Wan, Song Wang, Wei Feng, and Pheng-Ann Heng [[paper link](http://openaccess.thecvf.com/content_CVPR_2020/papers/Chen_A_Multi-Task_Mean_Teacher_for_Semi-Supervised_Shadow_Detection_CVPR_2020_paper.pdf)]
 
-News: In 2020.9.17, We release the unsorted code for other researchers. The sorted code will be released after.
+#### News: In 2020.9.17, We release the unsorted code for other researchers. The sorted code will be released after.
 
 ***
 

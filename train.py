@@ -31,7 +31,7 @@ from utils.util import AverageMeter
 parser = argparse.ArgumentParser()
 # parser.add_argument('--root_path', type=str, default='/home/ext/chenzhihao/Datasets/union-shadow_extend/union-Train', help='Name of Experiment')
 parser.add_argument('--root_path', type=str, default='/home/ext/chenzhihao/Datasets/SBU_USR_manShadow/union-Train', help='Name of Experiment')
-parser.add_argument('--exp', type=str,  default='EGNet', help='model_name')
+parser.add_argument('--exp', type=str,  default='MTMT', help='model_name')
 parser.add_argument('--max_iterations', type=int,  default=10000, help='maximum epoch number to train')
 parser.add_argument('--batch_size', type=int, default=6, help='batch_size per gpu')
 parser.add_argument('--labeled_bs', type=int, default=4, help='labeled_batch_size per gpu')
@@ -53,7 +53,7 @@ args = parser.parse_args()
 
 train_data_path = args.root_path
 # snapshot_path = "../model_SBU_BDRAR/torch040_baseline_allCon_resample6-"+str(args.labeled_bs)+"_con-"+str(args.consistency)+"/" + args.exp + "/"
-snapshot_path = "../model_SBU_EGNet/baselineC64_DSS_unlabelcons/repeat"+str(args.repeat)+'_edge'+str(args.edge)+'lr'+str(args.base_lr)+'consistency'+str(args.consistency)+'subitizing'+str(args.subitizing)+'/'
+snapshot_path = "../model_SBU_MTMT/baselineC64_DSS_unlabelcons/repeat"+str(args.repeat)+'_edge'+str(args.edge)+'lr'+str(args.base_lr)+'consistency'+str(args.consistency)+'subitizing'+str(args.subitizing)+'/'
 tmp_path = 'tmp_see'
 if not os.path.exists(tmp_path):
     os.mkdir(tmp_path)
@@ -270,6 +270,6 @@ if __name__ == "__main__":
     # torch.save(ema_model.state_dict(), save_mode_path_ema)
     logging.info("save model to {}".format(save_mode_path))
     writer.close()
-    with open('record/loss_record_EGNet_MT.txt', 'a') as f:
+    with open('record/loss_record_MTMT.txt', 'a') as f:
         f.write(snapshot_path+' ')
         f.write(str(loss_record)+'\r\n')

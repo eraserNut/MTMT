@@ -13,9 +13,9 @@ import torchvision.utils as vutils
 
 
 def test_all_case(net, image_list, num_classes=1, save_result=True, test_save_path=None, trans_scale=416, GT_access=True):
-    # normal = transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]) # SBU
+    normal = transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]) # SBU
     # normal = transforms.Normalize([0.517, 0.514, 0.492], [0.186, 0.173, 0.181]) # ISTD
-    normal = transforms.Normalize([0.723, 0.616, 0.569], [0.169, 0.177, 0.197]) # ISIC2017
+    # normal = transforms.Normalize([0.723, 0.616, 0.569], [0.169, 0.177, 0.197]) # ISIC2017
     img_transform = transforms.Compose([
         transforms.Resize((trans_scale, trans_scale)),
         transforms.ToTensor(),

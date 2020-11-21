@@ -21,7 +21,7 @@ import torchvision.utils as vutils
 from networks.vnet import VNet
 from networks.vnet2d import VNet2d
 from networks.FPN import FPN
-from networks.EGNet_subitizing import build_model
+from networks.MTMT import build_model
 from dataloaders import utils
 from utils import ramps, losses
 from dataloaders.la_heart import LAHeart, RandomCrop, CenterCrop, RandomRotFlip, ToTensor, TwoStreamBatchSampler

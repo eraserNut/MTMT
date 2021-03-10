@@ -45,7 +45,7 @@ def test_all_case(net, image_list, num_classes=1, save_result=True, test_save_pa
         '''
         # resized image crf
         prediction = np.array(to_pil(res.data.squeeze(0).cpu()))
-        # prediction = np.uint8(prediction>=100)*255
+        # prediction = np.uint8(prediction>=90)*255 # trick just for SBU
         prediction = crf_refine(np.array(img.convert('RGB').resize((trans_scale, trans_scale))), prediction)
         prediction = np.array(transforms.Resize((h, w))(Image.fromarray(prediction.astype('uint8')).convert('L')))
         

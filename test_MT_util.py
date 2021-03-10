@@ -56,20 +56,20 @@ def test_all_case(net, image_list, num_classes=1, save_result=True, test_save_pa
             '''
             Calculate Jaccard 
             '''
-            Jaccard = (Jaccard*iter + TP_single / Union) / (iter+1)
-            iter = iter + 1
-            print("Current Jaccard is {}".format(Jaccard))
+            # Jaccard = (Jaccard*iter + TP_single / Union) / (iter+1)
+            # iter = iter + 1
+            # print("Current Jaccard is {}".format(Jaccard))
             '''
             Calculate BER 
             '''
-            # TP = TP + TP_single
-            # TN = TN + TN_single
-            # Np = Np + Np_single
-            # Nn = Nn + Nn_single
-            # ber_shadow = (1 - TP / Np) * 100
-            # ber_unshadow = (1 - TN / Nn) * 100
-            # ber_mean = 0.5 * (2 - TP / Np - TN / Nn) * 100
-            # print("Current ber is {}, shadow_ber is {}, unshadow ber is {}".format(ber_mean, ber_shadow, ber_unshadow))
+            TP = TP + TP_single
+            TN = TN + TN_single
+            Np = Np + Np_single
+            Nn = Nn + Nn_single
+            ber_shadow = (1 - TP / Np) * 100
+            ber_unshadow = (1 - TN / Nn) * 100
+            ber_mean = 0.5 * (2 - TP / Np - TN / Nn) * 100
+            print("Current ber is {}, shadow_ber is {}, unshadow ber is {}".format(ber_mean, ber_shadow, ber_unshadow))
         '''
         Save prediction
         '''

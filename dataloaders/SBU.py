@@ -129,3 +129,16 @@ class SBU(data.Dataset):
     def __len__(self):
         return len(self.imgs)
 
+def relabel_dataset(dataset, edge_able=False):
+    unlabeled_idxs = []
+    for idx in range(len(dataset.imgs)):
+        if not edge_able:
+            path, label = dataset.imgs[idx]
+        else:
+            path, label, edge = dataset.imgs[idx]
+        if label == -1:
+            unlabeled_idxs.append(idx)
+    labeled_idxs = sorted(set(range(len(dataset.imgs))) - set(unlabeled_idxs))
+
+    return labeled_idxs, unlabeled_idxs
+

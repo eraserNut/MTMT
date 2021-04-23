@@ -18,9 +18,6 @@ from torch.utils.data import DataLoader
 from torchvision.utils import make_grid
 import torchvision.utils as vutils
 
-from networks.vnet import VNet
-from networks.vnet2d import VNet2d
-from networks.FPN import FPN
 from networks.MTMT import build_model
 from dataloaders import utils
 from utils import ramps, losses

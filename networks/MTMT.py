@@ -6,7 +6,7 @@ import math
 from torch.autograd import Variable
 import numpy as np
 
-from .resnext.resnext101_5out import ResNeXt101, ResNeXt101_fork
+from .resnext.resnext101_5out import ResNeXt101
 
 config_vgg = {'convert': [[128, 256, 512, 512, 512], [64, 128, 256, 512, 512]],
               'merge1': [[128, 256, 128, 3, 1], [256, 512, 256, 3, 1], [512, 0, 512, 5, 2], [512, 0, 512, 5, 2],
@@ -301,7 +301,7 @@ def build_model(base_model_cfg='resnext101', ema=False):
     if not ema:
         return TUN_bone(base_model_cfg, *extra_layer(base_model_cfg, ResNeXt101()))
     else:
-        return TUN_bone(base_model_cfg, *extra_layer(base_model_cfg, ResNeXt101_fork()))
+        return TUN_bone(base_model_cfg, *extra_layer(base_model_cfg, ResNeXt101()))
 
 
 # weight init

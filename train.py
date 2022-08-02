@@ -22,7 +22,7 @@ from networks.MTMT import build_model
 from dataloaders import utils
 from utils import ramps, losses
 from dataloaders.SBU import SBU, relabel_dataset
-from dataloaders import joint_transforms
+from dataloaders import joint_transforms_edge
 from utils.util import AverageMeter, TwoStreamBatchSampler
 parser = argparse.ArgumentParser()
 # parser.add_argument('--root_path', type=str, default='/home/ext/chenzhihao/Datasets/union-shadow_extend/union-Train', help='Name of Experiment')

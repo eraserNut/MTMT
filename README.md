@@ -19,7 +19,7 @@ The results of shadow detection(w & w/o crf) on three datasets (SBU, UCF, ISTD) 
 at [Google Drive](https://drive.google.com/file/d/1BK4x9IUNQKBaP7ye5S2-e9_zEN7FbZUg/view?usp=sharing) or [BaiduNetdisk](https://pan.baidu.com/s/1Rdp8rQbj5f7Id4JJj99nxw)(password:131b for BaiduNetdisk).
 
 ## Trained Model
-You can download the trained model which is reported in our paper at [BaiduNetdisk](https://pan.baidu.com/s/1yjnsjE7mDPnEaHxdtNFhhQ)(password: h52i).
+You can download the trained model which is reported in our paper at [BaiduNetdisk](https://pan.baidu.com/s/1yjnsjE7mDPnEaHxdtNFhhQ)(password: h52i) or [Google Drive](https://drive.google.com/file/d/1s-4BSmz9j8u2_WoUnzNYL0QjRYFEeEkU/view?usp=share_link).
 
 ## Requirement
 * Python 3.6
